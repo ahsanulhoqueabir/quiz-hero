@@ -55,5 +55,133 @@
         </a>
       </nav>
     </header>
+    <main class="lg:px-20 px-5 text-justify py-10 space-y-5">
+      <!-- question 1  -->
+      <section>
+        <h1 class="text-xl font-bold">
+          1. What is the difference among map,filter,foreach and find in
+          javascript?
+        </h1>
+        <article class="space-y-5">
+          <p>
+            The map() method creates a new array with the results of calling a
+            provided function on every element in the calling array. The
+            filter() method creates a new array with all elements that pass the
+            test implemented by the provided function. The forEach() method
+            executes a provided function once for each array element. The find()
+            method returns the value of the first element in the provided array
+            that satisfies the provided testing function.
+          </p>
+          <div class="overflow-x-auto">
+            <table class="border-2">
+              <tr class="border-b-2 py-2">
+                <th class="border-r-2">Method</th>
+                <th class="border-r-2">Purpose</th>
+                <th class="border-r-2">Returns</th>
+                <th>Modifies Original Array</th>
+              </tr>
+              <tr class="border-b-2 py-2">
+                <td class="border-r-2 px-2">map</td>
+                <td class="border-r-2 px-2">
+                  Transforms each element of an array
+                </td>
+                <td class="border-r-2 px-2">
+                  New array with transformed elements
+                </td>
+                <td class="border-r-2 px-2">No</td>
+              </tr>
+              <tr class="border-b-2 py-2">
+                <td class="border-r-2 px-2">filter</td>
+                <td class="border-r-2 px-2">
+                  Filters elements based on a condition
+                </td>
+                <td class="border-r-2 px-2">
+                  New array with filtered elements
+                </td>
+                <td class="border-r-2 px-2">No</td>
+              </tr>
+              <tr class="border-b-2 py-2">
+                <td class="border-r-2 px-2">forEach</td>
+                <td class="border-r-2 px-2">
+                  Executes a function on each array element
+                </td>
+                <td class="border-r-2 px-2">undefined</td>
+                <td class="border-r-2 px-2">No</td>
+              </tr>
+              <tr class="border-b-2 py-2">
+                <td class="border-r-2 px-2">find</td>
+                <td class="border-r-2 px-2">
+                  Finds the first element that matches a condition
+                </td>
+                <td class="border-r-2 px-2">First matching element</td>
+                <td class="border-r-2 px-2">No</td>
+              </tr>
+            </table>
+          </div>
+        </article>
+      </section>
+      <!-- question 2  -->
+      <section>
+        <h1 class="text-xl font-bold">
+          2. What is the difference among session storage, local storage and
+          cookies
+        </h1>
+        <article class="space-y-3">
+          <p>
+            Session storage is a new feature in HTML5. It is similar to local
+            storage, the only difference is that it stores data for only one
+            session. The data is deleted when the user closes the specific
+            browser tab. Local storage is a new feature in HTML5. It is similar
+            to session storage, the only difference is that it stores data for
+            only one session. The data is deleted when the user closes the
+            specific browser tab. Cookies are small pieces of data that are
+            stored in the user's browser
+          </p>
+          <div class="overflow-x-auto mx-auto">
+            <table class="border-2">
+              <tr class="border-b-2 py-2">
+                <th class="border-r-2">Storage</th>
+                <th class="border-r-2">Scope</th>
+                <th class="border-r-2">Lifetime</th>
+                <th>Size</th>
+              </tr>
+              <tr class="border-b-2 py-2">
+                <td class="border-r-2 px-2">Session Storage</td>
+                <td class="border-r-2 px-2">Per tab</td>
+                <td class="border-r-2 px-2">Until tab is closed</td>
+                <td class="border-r-2 px-2">5MB</td>
+              </tr>
+              <tr class="border-b-2 py-2">
+                <td class="border-r-2 px-2">Local Storage</td>
+                <td class="border-r-2 px-2">Per domain</td>
+                <td class="border-r-2 px-2">Forever</td>
+                <td class="border-r-2 px-2">5MB</td>
+              </tr>
+              <tr class="border-b-2 py-2">
+                <td class="border-r-2 px-2">Cookies</td>
+                <td class="border-r-2 px-2">Per domain</td>
+                <td class="border-r-2 px-2">Until expiry date</td>
+                <td class="border-r-2 px-2">4KB</td>
+              </tr>
+            </table>
+          </div>
+        </article>
+      </section>
+      <!-- question 3  -->
+      <section>
+        <h1 class="font-bold text-xl">3. How event loop works in javascript</h1>
+        <article class="space-y-3">
+          <p>
+            The event loop is the secret behind JavaScript's asynchronous
+            programming. JS is single-threaded, meaning that two bits of script
+            cannot run at the same time; they have to run one after another. The
+            event loop is what allows JavaScript to perform non-blocking I/O
+            operations — despite the fact that JavaScript is single-threaded —
+            by offloading operations to the system kernel whenever possible.
+          </p>
+          <img src="https://scaler.com/topics/images/event-loop-javascript.webp" alt="">
+        </article>
+      </section>
+    </main>
   </body>
 </html>
